@@ -46,11 +46,18 @@
 <body>
 	<div id="pdf-div">
 		<label><h1>PDF Generation<h1></label>
-		<table id="pdf-table" width="50%" cellpadding="5" cellspacing="0" border="1">
+		<table id="pdf-table" width="25%" cellpadding="5" cellspacing="0" border="0">
+			<colgroup>	
+				<col width="25%">
+				<col width="25%">
+			</colgroup>
 		<tbody>
 			<tr>
 				<td>
 					<input type="button" name="genPDF" id="genPDF" onclick="GeneratePDF()" value="Generate PDF"/>
+				</td>
+				<td>
+					<input type="button" name="alertbtn" id="alertbtn" onclick="alert('hello')" value="Alert me!"/>
 				</td>
 			</tr>
 		</tbody>
