@@ -37,7 +37,8 @@
 			doc.setFontSize(16);
 			doc.text(20, 30, 'This is some normal sized text underneath.');
 			
-			doc.save('filename.pdf');
+			//doc.save('filename.pdf');
+			doc.output('datauri');
 			//doc.output('dataurlnewwindow');
 		}
 	</script>
@@ -74,3 +75,4 @@
 	<script type="text/javascript" src="js/jspdf.plugin.standard_fonts_metrics.js"></script>
 
 </html>
+
