@@ -17,5 +17,6 @@
         Simon Ranjith
     </author>
 
+	<plugin name="Storage" value="org.apache.cordova.Storage" />
 	<feature name="http://api.phonegap.com/1.0/file"/>
 </widget>
