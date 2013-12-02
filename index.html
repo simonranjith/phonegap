@@ -35,11 +35,29 @@
 			doc.text(20, 20, 'My First PDF');
 			//doc.addPage();
 			doc.setFontSize(16);
-			doc.text(20, 30, 'This is some normal sized text underneath.');
+			doc.text(20, 30, 'Olá');
 			
-			doc.output('save', 'filename.pdf');
+			//doc.output('save', 'filename.pdf');
+			doc.output('datauri');
 			//doc.output('datauristring');
 			//doc.output('dataurlnewwindow');
+			
+			/*URL url = new File("test.html").toURI().toURL();
+			WebClient webClient = new WebClient(); 
+			HtmlPage page = webClient.getPage(url);
+
+			OutputStream os = null;
+			try{
+			   os = new FileOutputStream("test.pdf");
+
+			   ITextRenderer renderer = new ITextRenderer();
+			   renderer.setDocument(page,url.toString());
+			   renderer.layout();
+			   renderer.createPDF(os);
+			} finally{
+			   if(os != null) os.close();
+			}*/
+			
 		}
 	</script>
 	
