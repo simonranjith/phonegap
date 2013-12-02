@@ -17,23 +17,8 @@
 		{
 			var doc = new jsPDF();
 			
-			// We'll make our own renderer to skip this editor
-			/*var specialElementHandlers = {
-				'#pdf-div': function(element, renderer){
-					return true;
-				}
-			};*/
-			
-			// All units are in the set measurement for the document
-			// This can be changed to "pt" (points), "mm" (Default), "cm", "in"
-			/*doc.fromHTML($('body').get(0), 15, 15, {
-				'width': 170, 
-				'elementHandlers': specialElementHandlers
-			});*/
-			
 			doc.setFontSize(22);
 			doc.text(20, 20, 'My First PDF');
-			//doc.addPage();
 			doc.setFontSize(16);
 			doc.text(20, 30, 'Olá');
 			
@@ -41,23 +26,6 @@
 			doc.output('datauri');
 			//doc.output('datauristring');
 			//doc.output('dataurlnewwindow');
-			
-			/*URL url = new File("test.html").toURI().toURL();
-			WebClient webClient = new WebClient(); 
-			HtmlPage page = webClient.getPage(url);
-
-			OutputStream os = null;
-			try{
-			   os = new FileOutputStream("test.pdf");
-
-			   ITextRenderer renderer = new ITextRenderer();
-			   renderer.setDocument(page,url.toString());
-			   renderer.layout();
-			   renderer.createPDF(os);
-			} finally{
-			   if(os != null) os.close();
-			}*/
-			
 		}
 	</script>
 	
